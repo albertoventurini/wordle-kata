@@ -10,7 +10,8 @@ public class DictionaryWordleTest {
 
     @Test
     public void withTargetWordValid_whenUserGuessesLived_returnsResponse() {
-        final String response = dictionaryWordle.guessWord("valid");
+
+        final String response = dictionaryWordle.guessWord("lived", "valid");
 
         assertEquals("ooowg", response);
     }

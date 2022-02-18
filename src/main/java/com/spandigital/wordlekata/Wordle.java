@@ -5,8 +5,8 @@ public interface Wordle {
     /**
      * Given an input word, returns the result of guessing the word.
      * @param input a word
-     * @return a string of emojis encoding the result
+     * @return a string encoding the result
      */
-    String guessWord(String input);
+    String guessWord(String input, String target);
 
 }
