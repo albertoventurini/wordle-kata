@@ -16,4 +16,11 @@ public class DictionaryWordleTest {
         assertEquals("ooowg", response);
     }
 
+    @Test
+    public void withTargetWordValid_whenUserGuessesLiver_returnsResponse() {
+
+        final String response = dictionaryWordle.guessWord("liver", "valid");
+
+        assertEquals("oooww", response);
+    }
 }
