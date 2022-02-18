@@ -9,7 +9,7 @@ Features:
 2. Wordle game
 
 ### Single word
-As a user, I can try to guess a word, so that I get visual feedback on which letters are correct or incorrect.
+As a user, I want to guess a word, so that I get visual feedback on which letters are correct or incorrect.
 
 The application chooses a random 5-letter word from a dictionary. The user can enter a word
 (either via standard input or another way) and the application provides a sequence of color-coded
@@ -18,7 +18,13 @@ emojis:
 - a green emoji square is a correct letter
 - an orange emoji square is a letter that appears in the target word at a different place.
 
-Example: the target word is "valid" and the user enters "lived". The application returns: 🟨🟨🟨⬜🟩.
+Given: the target word is "valid"
+When: the user enters "lived"
+Then: the application returns 🟨🟨🟨⬜🟩.
+
+o = orange
+w = white
+g = green
 
 ### Wordle game
 
